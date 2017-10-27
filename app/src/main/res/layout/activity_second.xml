@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="#E0E0E0"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.guerrero.guerrerolabexer2.SecondActivity">
+
+    <Button
+        android:id="@+id/btn_LoadShared"
+        android:layout_width="220dp"
+        android:layout_height="wrap_content"
+        android:text="LOAD SHARED PREFERENCES"
+        android:onClick="loadShared"
+        android:layout_marginTop="85dp"
+        android:background="#90A4AE"
+        android:layout_alignParentTop="true"
+        android:layout_alignLeft="@+id/btn_LoadInternal"
+        android:layout_alignStart="@+id/btn_LoadInternal" />
+
+    <Button
+        android:id="@+id/btn_LoadInternal"
+        android:layout_width="220dp"
+        android:layout_height="wrap_content"
+        android:text="LOAD INTERNAL STORAGE"
+        android:onClick="loadInternal"
+        android:background="#FFAB91"
+        android:layout_marginTop="30dp"
+        android:layout_below="@+id/btn_LoadShared"
+        android:layout_centerHorizontal="true" />
+
+    <Button
+        android:id="@+id/btn_Clear"
+        android:layout_width="110dp"
+        android:layout_height="wrap_content"
+        android:text="CLEAR"
+        android:onClick="clearrr"
+        android:background="#FFCC80"
+        android:layout_alignBaseline="@+id/btn_Back"
+        android:layout_alignBottom="@+id/btn_Back"
+        android:layout_alignLeft="@+id/btn_LoadInternal"
+        android:layout_alignStart="@+id/btn_LoadInternal" />
+
+    <Button
+        android:id="@+id/btn_Back"
+        android:layout_width="110dp"
+        android:layout_height="wrap_content"
+        android:text="BACK"
+        android:onClick="backkk"
+        android:background="#BCAAA4"
+        android:layout_marginTop="33dp"
+        android:layout_below="@+id/btn_LoadInternal"
+        android:layout_toRightOf="@+id/btn_Clear"
+        android:layout_toEndOf="@+id/btn_Clear" />
+
+    <TextView
+        android:id="@+id/tv_display"
+        android:textSize="18dp"
+        android:textColor="#43A047"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="54dp"
+        android:layout_below="@+id/btn_Clear"
+        android:layout_centerHorizontal="true" />
+
+</RelativeLayout>
